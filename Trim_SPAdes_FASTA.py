@@ -73,7 +73,7 @@ def main(args):
         except NotImplementedError:
             process_count = 2
     else:
-        process_count = args.processes
+        process_count = int(args.processes[0])
 
     out_dir = args.outdir[0] if args.outdir else os.getcwd()
 
